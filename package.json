@@ -18,7 +18,6 @@
         "postcss-focus": "^3.0.0"
     },
     "dependencies": {
-        "bootstrap": "^4.1.3",
         "minireset.css": "0.0.3"
     }
 }
