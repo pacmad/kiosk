@@ -1,0 +1,48 @@
+.chart-circle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.chart-circle__svg {
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+.chart-circle__background {
+  stroke: $color-structure-bright;
+  stroke-width: 3;
+  fill: transparent;
+}
+
+.chart-circle__value {
+  stroke: $color-primary;
+  stroke-width: 3;
+  fill: transparent;
+}
+
+.chart-circle--positive .chart-circle__value {
+  stroke: $color-positive;
+}
+
+.chart-circle--negative .chart-circle__value {
+  stroke: $color-negative;
+}
+
+.chart-circle__caption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  padding-left: $spacing-small;
+  padding-right: $spacing-small;
+}
+
+.chart-circle__strong {
+  font-weight: bold;
+  font-size: $font-size-large;
+}

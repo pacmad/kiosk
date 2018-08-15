@@ -1,0 +1,14 @@
+.footer__logo {
+  background-color: $color-bright;
+  text-align: center;
+  padding-top: $spacing-large;
+  padding-bottom: $spacing-large;
+}
+
+.footer__additional {
+  background-color: $color-dark;
+  color: $color-bright;
+  text-align: center;
+  padding-top: $spacing-default;
+  padding-bottom: $spacing-default;
+}

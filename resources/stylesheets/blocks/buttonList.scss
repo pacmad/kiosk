@@ -1,0 +1,24 @@
+.button-list {
+  @include clearfix();
+
+  list-style: none;
+  margin-bottom: $spacing-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.button-list__item {
+  float: left;
+  display: block;
+  margin-right: $spacing-small;
+
+  &.button-list__item--right {
+    float: right;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

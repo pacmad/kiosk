@@ -1,0 +1,11 @@
+.header {
+  position: relative;
+  background-color: $color-primary;
+  padding-top: $spacing-default;
+  padding-bottom: $spacing-default;
+}
+
+.header__wrap {
+  @include wrap();
+  @include clearfix();
+}

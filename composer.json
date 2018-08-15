@@ -1,0 +1,42 @@
+{
+    "name": "runepiper/kiosk",
+    "description": "Kiosk is a web application for summer camps to keep track of the money kids spend at the camp kiosk cashless.",
+    "type": "project",
+    "require": {
+        "php": "^7.2",
+        "fideloper/proxy": "^4.0",
+        "laravel/framework": "5.6.*"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.0",
+        "nunomaduro/collision": "^2.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds"
+        ],
+        "psr-4": {
+            "RP\\Kiosk\\": "app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ]
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

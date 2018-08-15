@@ -1,0 +1,36 @@
+.grid {
+  @include clearfix();
+
+  list-style: none;
+  margin-bottom: $spacing-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.grid__half-first {
+  display: block;
+  margin-bottom: $spacing-small;
+}
+
+@media (min-width: 600px) {
+  .grid__half-first {
+    width: 50%;
+    float: left;
+    padding-right: $spacing-x-small;
+    margin-bottom: 0;
+  }
+}
+
+.grid__half-second {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .grid__half-second {
+    width: 50%;
+    float: right;
+    padding-left: $spacing-x-small;
+  }
+}

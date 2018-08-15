@@ -1,0 +1,28 @@
+.link {
+  text-decoration: underline;
+  color: $color-dark;
+
+  &.link--button-spacing {
+    display: inline-block;
+    line-height: 1;
+    padding: $spacing-small;
+  }
+
+  &.link--bright {
+    color: $color-bright;
+  }
+
+  &.link--unobtrusive {
+    color: $color-structure-dark;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.link__icon {
+  display: inline-block;
+  width: $spacing-small;
+  margin-right: $spacing-x-small;
+}

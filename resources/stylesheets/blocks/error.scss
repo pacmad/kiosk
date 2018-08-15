@@ -1,0 +1,27 @@
+.error {
+  display: block;
+  width: 100%;
+  padding: $spacing-x-small $spacing-default;
+  border: 2px solid $color-primary;
+  position: relative;
+  border-radius: 3px;
+  font-size: $font-size-small;
+  margin-bottom: $spacing-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $spacing-x-small;
+    border-color: transparent transparent $color-primary transparent;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -100%);
+  }
+}

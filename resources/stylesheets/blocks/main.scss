@@ -1,0 +1,46 @@
+.main {
+  @include clearfix();
+
+  background-color: $color-structure-bright;
+  padding-top: $spacing-large;
+  padding-bottom: $spacing-large;
+}
+
+.main__wrap {
+  @include wrap();
+}
+
+.main__sidebar {
+  margin-bottom: $spacing-small;
+}
+
+.main__content {
+  margin-bottom: $spacing-small;
+}
+
+@media (min-width: 1250px) {
+  .main__content {
+    width: 60%;
+    float: left;
+    padding-right: $spacing-small;
+    margin-bottom: 0;
+  }
+
+  .main__sidebar {
+    width: 25%;
+  }
+}
+
+@media (min-width: 850px) {
+  .main__sidebar {
+    float: left;
+    width: 25%;
+    display: block;
+  }
+
+  .main__content {
+    width: 75%;
+    float: right;
+    padding-left: $spacing-small;
+  }
+}

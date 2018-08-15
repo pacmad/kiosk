@@ -1,0 +1,8 @@
+.list {
+  list-style-position: inside;
+  margin-bottom: $spacing-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

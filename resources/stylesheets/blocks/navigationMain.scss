@@ -1,0 +1,25 @@
+.navigation-main {
+  float: left;
+  font-size: $font-size-default;
+}
+
+.navigation-main__list {
+  list-style: none;
+}
+
+.navigation-main__item {
+  float: left;
+  display: block;
+  margin-right: $spacing-default;
+}
+
+.navigation-main__link {
+  display: block;
+  text-decoration: none;
+  color: $color-dark;
+  position: relative;
+}
+
+.navigation-main__item.navigation-main__item--active .navigation-main__link {
+  font-weight: bold;
+}

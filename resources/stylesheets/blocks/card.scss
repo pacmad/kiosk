@@ -1,0 +1,72 @@
+.card {
+  background-color: $color-bright;
+  position: relative;
+  display: block;
+  margin-bottom: $spacing-small;
+  transition: all $transition-standard;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 $spacing-x-small $spacing-x-small (-1 * $spacing-x-small) rgba($color-dark, 0.25);
+  }
+}
+
+.card__figure {
+  @include clearfix;
+
+  background-color: $color-primary-bright;
+  display: block;
+  color: $color-primary;
+  padding: $spacing-small;
+
+  &.card__figure--secondary {
+    background-color: $color-secondary-bright;
+    color: $color-secondary;
+  }
+
+  &.card__figure--negative {
+    background-color: $color-negative-bright;
+    color: $color-negative;
+  }
+
+  &.card__figure--positive {
+    background-color: $color-positive-bright;
+    color: $color-positive;
+  }
+}
+
+.card__icon {
+  float: left;
+  width: 50px;
+  fill: $color-dark;
+}
+
+.card__icon-text {
+  color: $color-dark;
+  text-transform: uppercase;
+  float: right;
+  text-align: center;
+  line-height: 1;
+}
+
+.card__something-todo {
+  font-weight: bold;
+  display: block;
+  font-size: $font-size-large;
+}
+
+.card__content {
+  padding: $spacing-small;
+  display: block;
+}
+
+.card__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: transparent;
+  line-height: 0;
+  font-size: 0;
+}

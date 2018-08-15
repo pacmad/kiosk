@@ -1,0 +1,34 @@
+@mixin wrap() {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing-default;
+  padding-right: $spacing-default;
+}
+
+@mixin clearfix() {
+  zoom: 1;
+
+  &::before,
+  &::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin icon($icon) {
+  content: $icon;
+  font-family: $icon-font-family;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}

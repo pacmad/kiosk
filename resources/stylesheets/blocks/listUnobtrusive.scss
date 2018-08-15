@@ -1,0 +1,16 @@
+.list-unobtrusive {
+  @include clearfix();
+
+  list-style: none;
+  font-size: $font-size-small;
+}
+
+.list-unobtrusive__item {
+  display: block;
+  float: left;
+  margin-right: $spacing-small;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

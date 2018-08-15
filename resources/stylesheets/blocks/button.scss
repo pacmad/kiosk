@@ -1,0 +1,67 @@
+.button {
+  margin: 0;
+  border: 0;
+  padding: $spacing-small $spacing-small $spacing-small ($spacing-small + $spacing-small + $spacing-x-small);
+  appearance: none;
+  font-size: $font-size-default;
+  font-family: $font-family-default;
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: box-shadow 250ms, transform 250ms;
+  margin-bottom: $spacing-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+
+  &.button--primary {
+    background-color: $color-primary;
+    color: $color-dark;
+  }
+
+  &.button--negative {
+    background-color: $color-negative;
+    color: $color-bright;
+  }
+
+  &.button--positive {
+    background-color: $color-positive;
+    color: $color-bright;
+  }
+
+  &.button--without-icon {
+    padding-left: $spacing-small;
+  }
+
+  &.button--without-text {
+    width: 0;
+    padding-right: $spacing-x-small;
+    text-indent: -9999px;
+  }
+
+  &:hover {
+    box-shadow: 0 $spacing-x-small $spacing-x-small (-1 * $spacing-x-small) rgba($color-dark, 0.25);
+    transform: translateY(-1px);
+  }
+}
+
+.button__icon {
+  position: absolute;
+  top: 50%;
+  left: $spacing-small;
+  transform: translateY(-50%);
+  width: $spacing-small;
+}
+
+.button.button--without-text .button__icon {
+  text-indent: 0;
+}

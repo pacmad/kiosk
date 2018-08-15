@@ -1,0 +1,97 @@
+.overview {
+  margin-bottom: $spacing-small;
+  font-size: $font-size-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .overview {
+    font-size: $font-size-default;
+  }
+}
+
+.overview__table {
+  border-top: 1px solid $color-structure-bright;
+  border-left: 1px solid $color-structure-bright;
+  margin-bottom: $spacing-small;
+  width: 100%;
+}
+
+.overview__header {
+  font-weight: bold;
+}
+
+.overview__row {
+  border-bottom: 1px solid $color-structure-bright;
+}
+
+.overview__cell {
+  padding: $spacing-x-small;
+  border-right: 1px solid $color-structure-bright;
+
+  &.overview__cell--fit-to-content {
+    width: 1%;
+    white-space: nowrap;
+  }
+}
+
+// Starting with some not proper BEM styling
+.overview .dataTable-input {
+  margin: 0 0 $spacing-small 0;
+  padding: $spacing-small $spacing-default;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  text-transform: none;
+  appearance: none;
+  font-size: $font-size-default;
+  font-family: $font-family-default;
+  font-weight: bold;
+  line-height: 1;
+  background-color: $color-structure-bright;
+  width: 100%;
+}
+
+.dataTables-empty {
+  padding: $spacing-x-small;
+  border-right: 1px solid $color-structure-bright;
+  border-bottom: 1px solid $color-structure-bright;
+}
+
+.overview .dataTable-sorter {
+  text-decoration: none;
+  color: inherit;
+}
+
+.overview .dataTable-bottom {
+  @include clearfix();
+}
+
+.overview .dataTable-pagination {
+  list-style: none;
+  float: left;
+  width: 50%;
+}
+
+.overview .dataTable-pagination li {
+  display: inline-block;
+  padding-right: $spacing-small;
+}
+
+.overview .dataTable-pagination li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.overview .dataTable-pagination li.active a {
+  font-weight: bold;
+}
+
+.overview .dataTable-info {
+  float: right;
+  width: 50%;
+  text-align: right;
+}

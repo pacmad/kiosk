@@ -1,0 +1,31 @@
+.article {
+  padding: $spacing-default;
+  background-color: $color-bright;
+  margin-bottom: $spacing-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.article--large {
+    padding: $spacing-large;
+  }
+
+  &.article--important {
+    border: 2px solid $color-primary;
+  }
+}
+
+.article__figure {
+  margin-bottom: $spacing-default;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.article__figure--no-spacing {
+    margin-left: -1 * $spacing-default;
+    margin-right: -1 * $spacing-default;
+    margin-top: -1 * $spacing-default;
+  }
+}
