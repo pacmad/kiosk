@@ -3,7 +3,7 @@
     "main": "gulpfile.js",
     "devDependencies": {
         "autoprefixer": "^7.2.5",
-        "eslint": "^5.2.0",
+        "eslint": "^5.7.0",
         "gulp": "^3.9.1",
         "gulp-autoprefixer": "^5.0.0",
         "gulp-concat": "^2.6.1",
